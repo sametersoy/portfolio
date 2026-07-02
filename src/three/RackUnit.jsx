@@ -35,7 +35,7 @@ export default function RackUnit({ unit, y, w, h, depth, selected, dimmed, onSel
   useFrame(() => {
     if (!group.current) return
     // Pull the active/hovered unit out of the rack like a drawer.
-    const targetZ = selected ? 0.06 : hovered ? 0.035 : 0
+    const targetZ = selected ? 0.09 : hovered ? 0.04 : 0
     group.current.position.z += (targetZ - group.current.position.z) * 0.15
     if (rim.current) {
       const target = selected ? 0.9 : hovered ? 0.45 : 0
@@ -83,7 +83,7 @@ export default function RackUnit({ unit, y, w, h, depth, selected, dimmed, onSel
           <Html
             position={[w / 2 + 0.12, 0, 0.1]}
             center
-            distanceFactor={4}
+            distanceFactor={5.5}
             occlude={false}
             style={{ pointerEvents: 'none' }}
           >

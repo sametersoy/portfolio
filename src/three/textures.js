@@ -222,6 +222,56 @@ export function meterTexture(text = '13.8A') {
   })
 }
 
+// Hot-swap drive sled front: fine perforation grid, capacity label,
+// release latch recess and a light-pipe channel on the right.
+export function caddyTexture() {
+  return makeTexture('caddy', 192, 96, (ctx, w, h) => {
+    ctx.fillStyle = '#161d26'
+    ctx.fillRect(0, 0, w, h)
+    const g = ctx.createLinearGradient(0, 0, 0, h)
+    g.addColorStop(0, 'rgba(255,255,255,0.06)')
+    g.addColorStop(0.2, 'rgba(255,255,255,0)')
+    g.addColorStop(1, 'rgba(0,0,0,0.3)')
+    ctx.fillStyle = g
+    ctx.fillRect(0, 0, w, h)
+    // capacity label top-left
+    ctx.fillStyle = 'rgba(195,210,225,0.55)'
+    ctx.font = 'bold 10px Arial'
+    ctx.textAlign = 'left'
+    ctx.textBaseline = 'middle'
+    ctx.fillText('2.4TB SAS 10K', 10, 12)
+    // perforation grid
+    for (let y = 26; y <= 58; y += 8) {
+      for (let x = 12; x <= 138; x += 8) {
+        ctx.fillStyle = 'rgba(200,220,240,0.13)'
+        ctx.beginPath()
+        ctx.arc(x, y + 1, 2.6, 0, Math.PI * 2)
+        ctx.fill()
+        ctx.fillStyle = '#040709'
+        ctx.beginPath()
+        ctx.arc(x, y, 2.6, 0, Math.PI * 2)
+        ctx.fill()
+      }
+    }
+    // light-pipe channel right
+    ctx.fillStyle = '#0a1017'
+    ctx.fillRect(152, 6, 18, 62)
+    ctx.strokeStyle = 'rgba(0,0,0,0.5)'
+    ctx.strokeRect(152, 6, 18, 62)
+    // latch recess + release button
+    ctx.fillStyle = '#0c1219'
+    ctx.fillRect(6, 72, w - 12, 20)
+    ctx.fillStyle = '#28323e'
+    roundRect(ctx, 10, 75, w - 66, 14, 4)
+    ctx.fill()
+    ctx.fillStyle = 'rgba(255,255,255,0.08)'
+    ctx.fillRect(10, 75, w - 66, 3)
+    ctx.fillStyle = '#1b242f'
+    roundRect(ctx, w - 48, 75, 38, 14, 3)
+    ctx.fill()
+  })
+}
+
 // Torx screw head, mapped onto tiny cylinder caps.
 export function screwTexture() {
   return makeTexture('screw', 64, 64, (ctx, w, h) => {

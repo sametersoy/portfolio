@@ -1,24 +1,29 @@
 import { UNITS } from '../data/rack.js'
 
 // 1U in world space (slightly exaggerated for visual readability).
-export const U = 0.16
+export const U = 0.17
 export const INNER_W = 1.9
 export const UNIT_W = INNER_W - 0.05
 export const BODY_DEPTH = 1.0
 const GAP = 0.01
 
-// Front-face stack, top -> bottom. `kind: 'unit'` slots are interactive and
-// pull their data from UNITS by id.
+// Front-face stack, top -> bottom (22U tower). `kind: 'unit'` slots are
+// interactive and pull their data from UNITS by id; vent/blank slots are
+// filler panels like a real, partially populated enterprise rack.
 const STACK = [
   { kind: 'vent', u: 1 },
   { kind: 'unit', id: 'servers' },
-  { kind: 'cable', u: 1 },
+  { kind: 'blank', u: 1 },
   { kind: 'unit', id: 'network' },
   { kind: 'unit', id: 'kubernetes' },
+  { kind: 'blank', u: 1 },
   { kind: 'unit', id: 'databases' },
-  { kind: 'cable', u: 1 },
+  { kind: 'blank', u: 1 },
   { kind: 'unit', id: 'software' },
   { kind: 'unit', id: 'security' },
+  { kind: 'vent', u: 1 },
+  { kind: 'blank', u: 1 },
+  { kind: 'vent', u: 1 },
   { kind: 'pdu', u: 1 },
   { kind: 'psu', u: 2 },
 ]

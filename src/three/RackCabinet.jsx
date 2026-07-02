@@ -1,13 +1,11 @@
-import { useMemo } from 'react'
 import RackUnit from './RackUnit.jsx'
-import { VentPanel, CablePanel, PduPanel, PsuPanel } from './faces.jsx'
-import PatchCables from './Cables.jsx'
+import { VentPanel, BlankPanel, PduPanel, PsuPanel } from './faces.jsx'
 import { LAYOUT, U, INNER_W, UNIT_W, BODY_DEPTH } from './rackLayout.js'
 import { hexPerfTexture, brushedTexture, railTexture, labelTexture } from './textures.js'
 
 const PANELS = {
   vent: VentPanel,
-  cable: CablePanel,
+  blank: BlankPanel,
   pdu: PduPanel,
   psu: PsuPanel,
 }
@@ -128,24 +126,6 @@ export default function RackCabinet({ selectedId, onSelect }) {
   const { slots, totalH } = LAYOUT
   const faceZ = BODY_DEPTH / 2 + 0.1 // front mounting plane
 
-  // cable runs: each management panel serves the unit directly below it
-  const cableRuns = useMemo(() => {
-    const runs = []
-    slots.forEach((s, i) => {
-      if (s.kind !== 'cable') return
-      const below = slots[i + 1]
-      if (below?.kind === 'unit') {
-        runs.push({
-          key: `run-${i}`,
-          fromY: below.yCenter,
-          panelY: s.yCenter,
-          count: below.unit.type === 'switch' ? 8 : 5,
-        })
-      }
-    })
-    return runs
-  }, [slots])
-
   return (
     <group>
       <Frame totalH={totalH} />
@@ -179,10 +159,6 @@ export default function RackCabinet({ selectedId, onSelect }) {
             </group>
           )
         })}
-
-        {cableRuns.map((r) => (
-          <PatchCables key={r.key} fromY={r.fromY} panelY={r.panelY} count={r.count} w={UNIT_W} />
-        ))}
       </group>
     </group>
   )

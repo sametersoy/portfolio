@@ -7,10 +7,8 @@ import Timeline from './components/Timeline.jsx'
 import ContactModal from './components/ContactModal.jsx'
 import LoadingScreen from './components/LoadingScreen.jsx'
 import SeoSync from './components/SeoSync.jsx'
-import { useTranslation } from 'react-i18next'
 
 export default function App() {
-  const { t } = useTranslation()
   const [selected, setSelected] = useState(null) // unit object or null
   const [tlExpanded, setTlExpanded] = useState(false)
   const [contactOpen, setContactOpen] = useState(false)
@@ -39,11 +37,6 @@ export default function App() {
         />
 
         <Hero hidden={!!selected} />
-
-        <div className="rack-badge" aria-hidden="true">
-          <span className="rack-badge__led" />
-          {t('rack.label')} · <strong>{t('rack.online')}</strong>
-        </div>
 
         <DetailPanel unit={selected} onClose={() => setSelected(null)} />
 

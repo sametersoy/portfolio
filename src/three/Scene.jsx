@@ -1,5 +1,5 @@
-import { useMemo, useRef } from 'react'
-import { Canvas, useFrame, useThree } from '@react-three/fiber'
+import { useMemo } from 'react'
+import { Canvas } from '@react-three/fiber'
 import {
   OrbitControls,
   Environment,
@@ -8,40 +8,10 @@ import {
   AdaptiveDpr,
 } from '@react-three/drei'
 import { EffectComposer, Bloom, Vignette, SMAA } from '@react-three/postprocessing'
-import * as THREE from 'three'
 import RackCabinet from './RackCabinet.jsx'
 import { LAYOUT } from './rackLayout.js'
 
 const FLOOR_Y = -LAYOUT.totalH / 2 - 0.2
-
-// id -> world Y of each interactive unit, for camera focusing.
-const UNIT_Y = Object.fromEntries(
-  LAYOUT.slots.filter((s) => s.kind === 'unit').map((s) => [s.unit.id, s.yCenter]),
-)
-
-function CameraRig({ selectedId }) {
-  const controls = useThree((s) => s.controls)
-  const camPos = useRef(new THREE.Vector3(0.55, 0.1, 5.2))
-  const target = useRef(new THREE.Vector3(0, 0, 0))
-
-  useFrame((state, delta) => {
-    const y = selectedId != null ? UNIT_Y[selectedId] : null
-    if (y != null) {
-      camPos.current.set(0.6, y + 0.04, 2.5)
-      target.current.set(-0.05, y, 0)
-    } else {
-      camPos.current.set(0.55, 0.1, 5.2)
-      target.current.set(0, 0, 0)
-    }
-    const k = 1 - Math.pow(0.0015, delta) // frame-rate independent damping
-    state.camera.position.lerp(camPos.current, k)
-    if (controls) {
-      controls.target.lerp(target.current, k)
-      controls.update()
-    }
-  })
-  return null
-}
 
 export default function Scene({ selectedId, onSelect }) {
   const dpr = useMemo(() => [1, Math.min(2, typeof window !== 'undefined' ? window.devicePixelRatio : 1.5)], [])
@@ -51,11 +21,11 @@ export default function Scene({ selectedId, onSelect }) {
       shadows
       dpr={dpr}
       gl={{ antialias: false, powerPreference: 'high-performance' }}
-      camera={{ position: [0.55, 0.1, 5.2], fov: 38, near: 0.1, far: 50 }}
+      camera={{ position: [0.55, 0.05, 7.7], fov: 38, near: 0.1, far: 50 }}
       onPointerMissed={() => onSelect(null)}
     >
       <color attach="background" args={['#05080d']} />
-      <fog attach="fog" args={['#05080d', 7.5, 16]} />
+      <fog attach="fog" args={['#05080d', 10.5, 20]} />
 
       {/* lighting */}
       <ambientLight intensity={0.28} color="#9fc4e0" />
@@ -116,7 +86,6 @@ export default function Scene({ selectedId, onSelect }) {
         enableDamping
         dampingFactor={0.08}
       />
-      <CameraRig selectedId={selectedId} />
 
       <EffectComposer multisampling={0} disableNormalPass>
         <Bloom mipmapBlur intensity={0.85} luminanceThreshold={0.25} luminanceSmoothing={0.3} radius={0.7} />

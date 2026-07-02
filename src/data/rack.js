@@ -17,8 +17,8 @@ export const UNITS = [
     icon: '🌐',
     accent: '#36c5ff',
     led: '#36c5ff',
-    type: 'switch', // 1U switch with RJ45 ports
-    u: 1,
+    type: 'switch', // 2U 48-port core switch
+    u: 2,
     items: ['Fortinet', 'VLAN', 'VPN', 'Routing'],
   },
   {
@@ -45,7 +45,7 @@ export const UNITS = [
     accent: '#c77dff',
     led: '#c77dff',
     type: 'server',
-    u: 1,
+    u: 2,
     items: ['.NET', 'React', 'React Native', 'API'],
   },
   {
@@ -53,8 +53,8 @@ export const UNITS = [
     icon: '🔒',
     accent: '#ff5d73',
     led: '#ff5d73',
-    type: 'firewall', // security appliance
-    u: 1,
+    type: 'firewall', // 2U security appliance
+    u: 2,
     items: ['PAM', 'QRadar', 'SIEM', 'IAM'],
   },
 ]

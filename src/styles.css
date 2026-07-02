@@ -159,24 +159,6 @@ a { color: inherit; }
   animation: pulse 1.6s infinite;
 }
 
-/* ---- rack status badge ------------------------------------------------- */
-.rack-badge {
-  position: absolute;
-  top: 86px; left: 50%; transform: translateX(-50%);
-  display: flex; align-items: center; gap: 9px;
-  font-family: var(--mono); font-size: 11px; letter-spacing: 1.5px;
-  color: var(--muted);
-  padding: 7px 14px; border-radius: 30px;
-  background: var(--panel); border: 1px solid var(--line);
-  backdrop-filter: blur(8px);
-}
-.rack-badge strong { color: var(--accent); }
-.rack-badge__led {
-  width: 7px; height: 7px; border-radius: 50%;
-  background: var(--accent); box-shadow: 0 0 9px var(--accent);
-  animation: pulse 1.4s infinite;
-}
-
 /* ---- detail panel ------------------------------------------------------ */
 .detail {
   position: absolute;
@@ -455,7 +437,6 @@ a { color: inherit; }
 @media (max-width: 900px) {
   :root { --tl-h: 132px; --tl-h-exp: 290px; }
   .topnav { display: none; }
-  .rack-badge { display: none; }
   .hero { left: 22px; right: 22px; max-width: none; bottom: calc(var(--tl-h) + 20px); }
   .hero__summary { display: none; }
   .detail { right: 50%; transform: translate(50%, -54%); top: 44%; }
