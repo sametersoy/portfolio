@@ -1,0 +1,103 @@
+Benim profilinde (yazılım + sistem + network + Kubernetes + Oracle + güvenlik + IT yöneticiliği) bir portföy sitesi için en etkili yaklaşım, eski bir masaüstü işletim sistemi ekranından ziyade modern bir veri merkezi teması olur.
+
+
+Yazılımcı kimliğimi öne çıkarır.
+
+IT yöneticiliği, altyapı ve operasyon tarafını yeterince yansıtmaz.
+
+3D Datacenter Cabinet
+
+Sunucu, network ve sistem yönetimi deneyimini doğrudan anlatır.
+Profesyonel görünür.
+Kurumsal ziyaretçiler üzerinde daha güçlü etki bırakır.
+10 yıllık IT yöneticiliği geçmişinle daha uyumlu.
+
+Ana ekranda karanlık bir veri merkezi:
+
+Ortada 3D bir rack cabinet.
+Rack üzerindeki cihazlara tıklanınca bölümler açılır:
+
+🖥️ Sunucular
+
+Windows Server
+Linux
+VMware
+Proxmox
+
+🌐 Network
+
+Fortinet
+VLAN
+VPN
+Routing
+
+☸️ Kubernetes
+
+Rancher
+Docker
+Longhorn
+CI/CD
+
+🗄️ Veritabanları
+
+Oracle
+SQL Server
+PostgreSQL
+Redis
+MongoDB
+
+💻 Yazılım
+
+.NET
+React
+React Native
+API Geliştirme
+
+🔒 Siber Güvenlik
+
+PAM
+QRadar
+SIEM
+IAM
+Daha etkileyici fikirler
+
+Rack cabinet'in önünde holografik bir arayüz:
+
+Sol tarafta ağ topolojisi animasyonu.
+Sağ tarafta Kubernetes cluster görünümü.
+Arka planda akan loglar.
+Alt tarafta kariyer zaman çizelgesi:
+
+2010 → Yazılım
+2015 → Sistem Uzmanı
+2018 → Kıdemli Sistem Uzmanı
+2020 → IT Yöneticisi
+2026 → Altyapı, Bulut ve Güvenlik Liderliği
+
+Bu tasarım hem yazılım hem de altyapı tarafındaki deneyimini aynı anda gösterir.
+
+Tek sayfalık bir site yapacaksan, eski Windows teması yerine kesinlikle 3D datacenter + interaktif rack cabinet konseptini seçerdim. Bu, senin mevcut kariyer profilini çok daha doğru temsil eder.
+
+Projede React ve vite three.js gibi teknolojiler kullanacağız. 
+
+one page olacak.
+
+sayfanın ingilizce ve türkçesi olacak. Browser diline göre açılacak.
+
+nmp yerine projede yarn kullan.
+
+rack cabinet üzerine daha çok çalış.
+
+görüntülerde realistik kullan.
+
+projenin tarih saat ayarlarında +3 istanbul unutma
+
+terih time line daha baskın göster
+
+seo tarafına önem göster
+
+mail adreslerimde sametersoy@yandex.com adresimi kullanan
+
+react + vite + three.js kullan one page olsun.
+
+tek bir rack cabinet kullan ve ciddi realistik olsun. Bütün site bunun etrafında şekillecek.

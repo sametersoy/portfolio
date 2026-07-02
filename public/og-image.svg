@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="'Space Grotesk',sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="65%" cy="40%" r="80%">
+      <stop offset="0%" stop-color="#0c1824"/>
+      <stop offset="100%" stop-color="#04070b"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22e3a6"/>
+      <stop offset="100%" stop-color="#36c5ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity="0.08" stroke="#36c5ff" stroke-width="1">
+    <path d="M0 120 H1200 M0 240 H1200 M0 360 H1200 M0 480 H1200"/>
+    <path d="M150 0 V630 M350 0 V630 M550 0 V630 M750 0 V630 M950 0 V630"/>
+  </g>
+  <!-- rack -->
+  <g transform="translate(820,90)">
+    <rect x="0" y="0" width="280" height="450" rx="10" fill="#0a131c" stroke="#1d2b38" stroke-width="3"/>
+    <g fill="#10202b" stroke="#23323f" stroke-width="1.5">
+      <rect x="22" y="22" width="236" height="52" rx="4"/>
+      <rect x="22" y="86" width="236" height="52" rx="4"/>
+      <rect x="22" y="150" width="236" height="52" rx="4"/>
+      <rect x="22" y="214" width="236" height="52" rx="4"/>
+      <rect x="22" y="278" width="236" height="52" rx="4"/>
+      <rect x="22" y="342" width="236" height="84" rx="4"/>
+    </g>
+    <g fill="#22e3a6">
+      <circle cx="40" cy="40" r="5"/><circle cx="40" cy="104" r="5"/>
+      <circle cx="40" cy="296" r="5"/><circle cx="40" cy="370" r="5"/>
+    </g>
+    <g fill="#36c5ff">
+      <circle cx="40" cy="168" r="5"/><circle cx="40" cy="232" r="5"/>
+    </g>
+  </g>
+  <!-- text -->
+  <text x="90" y="250" fill="#eaf4ff" font-size="84" font-weight="700">Samet Ersoy</text>
+  <text x="92" y="320" fill="url(#accent)" font-size="40" font-weight="600" letter-spacing="2">IT MANAGER</text>
+  <text x="92" y="380" fill="#8fa9bd" font-size="30">Infrastructure · Cloud · Security</text>
+  <text x="92" y="470" fill="#5e7488" font-size="24" font-family="'JetBrains Mono',monospace">servers · network · kubernetes · oracle · devsec</text>
+  <rect x="92" y="500" width="120" height="6" rx="3" fill="url(#accent)"/>
+</svg>

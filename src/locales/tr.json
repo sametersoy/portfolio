@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "title": "Samet Ersoy — IT Yöneticisi · Altyapı, Bulut ve Güvenlik",
+    "description": "10+ yıl IT yöneticisi. Sunucular, network, Kubernetes, Oracle, veritabanları, yazılım geliştirme ve siber güvenlik. İnteraktif 3D veri merkezi portföyü."
+  },
+  "loading": "VERİ MERKEZİ BAŞLATILIYOR",
+  "enter": "Sisteme Gir",
+  "hero": {
+    "role": "IT YÖNETİCİSİ",
+    "name": "Samet Ersoy",
+    "tagline": "Altyapı · Bulut · Güvenlik",
+    "summary": "10+ yıllık deneyimle yazılımdan sistem ve network yönetimine, Kubernetes'ten siber güvenliğe uçtan uca BT operasyonları kuruyor ve yönetiyorum.",
+    "hint": "Kabindeki bir cihaza tıklayarak yeteneklerimi keşfet"
+  },
+  "nav": {
+    "skills": "Yetenekler",
+    "timeline": "Kariyer",
+    "contact": "İletişim"
+  },
+  "rack": {
+    "label": "RACK-01 · PRODUCTION",
+    "online": "ÇEVRİMİÇİ",
+    "clickHint": "Cihaza tıkla"
+  },
+  "units": {
+    "servers": {
+      "title": "Sunucular",
+      "desc": "Fiziksel ve sanal sunucu altyapısının kurulumu, sanallaştırma ve yüksek erişilebilirlik yönetimi."
+    },
+    "network": {
+      "title": "Network",
+      "desc": "Kurumsal ağ tasarımı, segmentasyon, güvenlik duvarı ve uçtan uca bağlantı yönetimi."
+    },
+    "kubernetes": {
+      "title": "Kubernetes & Konteyner",
+      "desc": "Konteyner orkestrasyonu, küme yönetimi, kalıcı depolama ve CI/CD pipeline'ları."
+    },
+    "databases": {
+      "title": "Veritabanları",
+      "desc": "İlişkisel ve NoSQL veritabanlarının yönetimi, performans, yedekleme ve yüksek erişilebilirlik."
+    },
+    "software": {
+      "title": "Yazılım Geliştirme",
+      "desc": "Backend ve frontend uygulama geliştirme, API tasarımı ve mobil çözümler."
+    },
+    "security": {
+      "title": "Siber Güvenlik",
+      "desc": "Ayrıcalıklı erişim, kimlik yönetimi, güvenlik operasyon merkezi ve tehdit izleme."
+    }
+  },
+  "timeline": {
+    "heading": "Kariyer Zaman Çizelgesi",
+    "subheading": "Yazılımdan altyapı liderliğine 16 yıllık yolculuk",
+    "dev": { "title": "Yazılım Geliştirici", "desc": "Uygulama geliştirme ile kariyerin başlangıcı." },
+    "sysadmin": { "title": "Sistem Uzmanı", "desc": "Sunucu, sanallaştırma ve sistem yönetimine geçiş." },
+    "senior": { "title": "Kıdemli Sistem Uzmanı", "desc": "Kritik altyapı ve network sorumluluğu." },
+    "manager": { "title": "IT Yöneticisi", "desc": "Ekip, strateji ve uçtan uca BT operasyon yönetimi." },
+    "lead": { "title": "Altyapı, Bulut ve Güvenlik Liderliği", "desc": "Bulut, Kubernetes ve siber güvenlik odaklı liderlik." }
+  },
+  "contact": {
+    "heading": "İletişime Geç",
+    "text": "Projeler, iş birlikleri veya altyapı danışmanlığı için bana ulaşabilirsin.",
+    "email": "E-posta gönder",
+    "copy": "Kopyala",
+    "copied": "Kopyalandı!"
+  },
+  "panel": {
+    "stack": "Teknolojiler",
+    "close": "Kapat"
+  },
+  "footer": {
+    "rights": "Tüm hakları saklıdır.",
+    "built": "React · Vite · Three.js ile geliştirildi",
+    "tz": "İstanbul"
+  },
+  "lang": {
+    "switch": "Dil",
+    "tr": "Türkçe",
+    "en": "English"
+  }
+}

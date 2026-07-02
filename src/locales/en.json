@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "title": "Samet Ersoy — IT Manager · Infrastructure, Cloud & Security",
+    "description": "10+ years IT Manager. Servers, networking, Kubernetes, Oracle, databases, software development and cybersecurity. Interactive 3D data-center portfolio."
+  },
+  "loading": "INITIALIZING DATA CENTER",
+  "enter": "Enter System",
+  "hero": {
+    "role": "IT MANAGER",
+    "name": "Samet Ersoy",
+    "tagline": "Infrastructure · Cloud · Security",
+    "summary": "With 10+ years of experience I design and run end-to-end IT operations — from software to systems and networking, from Kubernetes to cybersecurity.",
+    "hint": "Click a device in the cabinet to explore my skills"
+  },
+  "nav": {
+    "skills": "Skills",
+    "timeline": "Career",
+    "contact": "Contact"
+  },
+  "rack": {
+    "label": "RACK-01 · PRODUCTION",
+    "online": "ONLINE",
+    "clickHint": "Click a device"
+  },
+  "units": {
+    "servers": {
+      "title": "Servers",
+      "desc": "Physical and virtual server infrastructure, virtualization and high-availability management."
+    },
+    "network": {
+      "title": "Networking",
+      "desc": "Enterprise network design, segmentation, firewalling and end-to-end connectivity."
+    },
+    "kubernetes": {
+      "title": "Kubernetes & Containers",
+      "desc": "Container orchestration, cluster management, persistent storage and CI/CD pipelines."
+    },
+    "databases": {
+      "title": "Databases",
+      "desc": "Relational and NoSQL database administration, performance, backup and high availability."
+    },
+    "software": {
+      "title": "Software Development",
+      "desc": "Backend and frontend application development, API design and mobile solutions."
+    },
+    "security": {
+      "title": "Cybersecurity",
+      "desc": "Privileged access, identity management, security operations center and threat monitoring."
+    }
+  },
+  "timeline": {
+    "heading": "Career Timeline",
+    "subheading": "A 16-year journey from software to infrastructure leadership",
+    "dev": { "title": "Software Developer", "desc": "Career started with application development." },
+    "sysadmin": { "title": "System Administrator", "desc": "Moved into servers, virtualization and systems." },
+    "senior": { "title": "Senior System Administrator", "desc": "Ownership of critical infrastructure and networking." },
+    "manager": { "title": "IT Manager", "desc": "Leading teams, strategy and end-to-end IT operations." },
+    "lead": { "title": "Infrastructure, Cloud & Security Lead", "desc": "Leadership focused on cloud, Kubernetes and cybersecurity." }
+  },
+  "contact": {
+    "heading": "Get in Touch",
+    "text": "Reach out for projects, collaboration or infrastructure consulting.",
+    "email": "Send email",
+    "copy": "Copy",
+    "copied": "Copied!"
+  },
+  "panel": {
+    "stack": "Technologies",
+    "close": "Close"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "built": "Built with React · Vite · Three.js",
+    "tz": "Istanbul"
+  },
+  "lang": {
+    "switch": "Language",
+    "tr": "Türkçe",
+    "en": "English"
+  }
+}
