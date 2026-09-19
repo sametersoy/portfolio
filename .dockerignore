@@ -1,0 +1,9 @@
+node_modules
+dist
+dist-ssr
+.git
+.yarn/cache
+.yarn/install-state.gz
+.claude
+*.log
+.DS_Store
